@@ -389,7 +389,7 @@
         // Submit PIN
         submitPinButton.addEventListener('click', () => {
             const pin = pinInput.value.trim();
-            if (pin === '1234') { // Example PIN, change it to your desired one
+            if (pin === '5154') { // Example PIN, change it to your desired one
                 database.ref('messages').set(null); // Clear all messages from Firebase
                 messagesDiv.innerHTML = ''; // Clear local messages display
                 pinModal.style.display = 'none'; // Close PIN modal
