@@ -32,10 +32,11 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #e3ffe5;
-            color: #333;
             overflow: hidden;
-            /* Prevent scrolling */
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         
         #authContainer,
@@ -128,7 +129,7 @@
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 30px;
-            background-color: #9afaff;
+            background: linear-gradient(40deg, #fd01e45f, #38fd0160);
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -136,6 +137,8 @@
             /* Allow messages to take available space */
             position: relative;
             /* Positioning for absolute elements */
+            backdrop-filter: blur(10px);
+            border: 2px solid rgb(254, 105, 215);
         }
         
         .message {
@@ -148,9 +151,9 @@
         }
         
         .message.me {
-            background-color: #c6eaf8;
+            background: linear-gradient(40deg, #1601fd5f, #38fd0160);
             /* Light green for self */
-            color: black;
+            color: rgb(255, 255, 255);
             align-self: flex-end;
             margin-left: auto;
             /* Push to the right */
@@ -158,17 +161,19 @@
             /* Rounded corners */
             margin-bottom: 15px;
             font-family: "Playwrite DE Grund", cursive;
+            backdrop-filter: blur(10px);
         }
         
         .message.other {
-            background-color: #b5bacc;
+            background: linear-gradient(40deg, #fd44015f, #38fd0160);
             /* White for others */
-            color: black;
+            color: rgb(234, 234, 234);
             align-self: flex-start;
             margin-right: auto;
             /* Push to the left */
             border-bottom-left-radius: 0;
             /* Rounded corners */
+            backdrop-filter: blur(10px);
         }
         
         .message strong {
@@ -188,12 +193,15 @@
             right: 0;
             padding: 10px;
             /* Add some padding */
-            background: #e3faff;
+            background: linear-gradient(40deg, #fd01e45f, #38fd0160);
             /* Background for input area */
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
             z-index: 10;
             /* Keep it above other content */
             margin-top: 100px;
+            backdrop-filter: blur(10px);
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
         }
         
         .pin-modal {
@@ -251,7 +259,7 @@
             margin-right: -10px;
             margin-top: 10px;
             letter-spacing: px;
-            color: #00bfff;
+            color: #ff00e1;
         }
         
         .sp {
